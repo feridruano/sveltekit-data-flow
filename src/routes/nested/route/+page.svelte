@@ -5,10 +5,12 @@
 
 	export let data;
 
-	log.page('+page.svelte');
+	log.page('/some/nested/route/+page.svelte');
 </script>
 
-<h1>Home</h1>
+<h1>Nested Route</h1>
+
+<h4>{data.a} + {data.b} = {data.a + data.b}</h4>
 
 <Pre name="export let data" value={data} />
 <Pre name="$page.data" value={$page.data} />
